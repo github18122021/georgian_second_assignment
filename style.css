@@ -1,0 +1,72 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url("https://media.istockphoto.com/id/1488357369/photo/aerial-viev-tropical-beach-in-mediterranean-idyllic-paradise-turquoise-water-shore-waves.webp?b=1&s=170667a&w=0&k=20&c=hdGJpElj6ihzXndzAJPlyxLQNwT9woTnBrl0cCL31Q8=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 1.6rem;
+    color: #333;
+}
+
+p {
+    color: black;
+}
+
+/* Element Selector */
+h1 {
+    text-align: center;
+}
+
+/* Descendant Selector */
+div p {
+    font-family: sans-serif;
+}
+
+/* Child Selector */
+ul > li {
+    font-size: 2rem;
+}
+
+/* Adjacent Sibling Selector */
+p + h3 {
+    font-family: 'Times New Roman', Times, serif;
+    width: fit-content;
+    background-color: yellow;
+}
+
+/* Style the list with every odd bullet point bold */
+ul li:nth-child(odd) {
+    font-weight: bold;
+}
+
+/* styling div.wrapper */
+div.wrapper {
+    /* background-color: #00CED1; */
+    margin: 0 auto;
+    width: 80vw; /* Set the width to 80% of the viewport width */
+    border: 1px solid black; /* Add a border */
+    padding: 20px;
+    position: relative;
+}
+
+header {
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.image-section {
+    width: 100%;
+}
+
+/* making the image responsive */
+.img-1 {
+    filter: grayscale(100%) brightness(150%);
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
